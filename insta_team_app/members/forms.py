@@ -1,5 +1,5 @@
 from django import forms
-from .models import Member
+from members.models import Member
 import re
 
 class MemberForm(forms.ModelForm):

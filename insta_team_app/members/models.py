@@ -17,7 +17,7 @@ class Member(models.Model):
     isInActive = models.BooleanField(default=False)
 
     def __str__(self):
-        return str(self.userId) + '| fname -' + str(self.first_name) + '| email -' + str(self.emailId)
+        return str(self.first_name) +' ' + str(self.last_name)
     
 # We can log activity for changes
 class Logger(models.Model):
